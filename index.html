@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlavors</title>   
+    <link rel="icon" href="./Bilder/logo 16x16.webp" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lobster&family=Poetsen+One&display=swap" rel="stylesheet">  
+    <script src="./Script/Search.js" defer></script>
+    <script src="./Script/popup.js"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="logo"><img src="bilder/logo.webp" alt="logo.webp"></a>
+        <div class="header_logoname">FitFlavors</div>
+        <a href="./dagens_recept.html" class="header__dagens header__flikbygg">Dagens recept</a>
+        <a href="./poular_recept.html" class="header__popular header__flikbygg">Populära recept</a>
+        <a href="./index.html" class="header__flikbygg header__hem aktuellflik">Hem</a>
+        
+    </header>
+
+
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <div class="search-overlay">
+                <div class="search-bar">
+                    <img src="./Bilder/fglas.svg" alt="Search Icon" class="search-icon">
+                    <input type="search" id="search" class="search-input" placeholder="Sök recept" autocomplete="true">
+                </div>
+            </div>
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="bilder/Image scroll/Bild1.webp" alt="">
+                </li>
+
+                <li class="splide__slide">
+                    <img src="bilder/Image scroll/Bild2.webp" alt="">
+                </li>
+
+                <li class="splide__slide">
+                    <img src="bilder/Image scroll/Bild3.webp" alt="">
+                </li>
+
+                <li class="splide__slide">
+                    <img src="bilder/Image scroll/Bild4.webp" alt="">
+                </li>
+
+                <li class="splide__slide">
+                        <img src="bilder/Image scroll/Bild5.webp" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        new Splide( '#image-carousel' ).mount();
+    </script>
+    <script src="./Script/image-carousel.js"></script>
+
+
+    <div class="index__alla__recept recipe-container">
+        <a href="./recept BBQ chicken.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/BBQ-chicken.webp" alt="Recipe Image">
+            <div class="recipe-text">BBQ Kyckling</div>
+        </div></a>
+
+        <a href="./Maträtter/Carbonara.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/Carbonara.webp" alt="Recipe Image">
+            <div class="recipe-text">Spaghetti Carbonara</div>
+        </div></a>
+
+        <a href="./Maträtter/Veggie wrap.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/Weggie-wrap.webp" alt="Recipe Image">
+            <div class="recipe-text">Veggie Wrap</div>
+        </div></a>
+
+        <a href="./Maträtter/Linsgryta.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/linsgryta.webp" alt="Recipe Image">
+            <div class="recipe-text">Linsgryta</div>
+        </div></a>
+
+        <a href="./Maträtter/Avocado toast.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/avocado-toast.webp" alt="Recipe Image">
+            <div class="recipe-text">Avocado Toast</div>
+        </div></a>
+
+        <a href="./Maträtter/Tikka_masla.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/Chicken-tikka-masala.webp" alt="Recipe Image">
+            <div class="recipe-text">Chicken Tikka Masala</div>
+        </div></a>
+
+        <a href="./Maträtter/pad_thai.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/Pad-thai.webp" alt="Recipe Image">
+            <div class="recipe-text">Pad Thai</div>
+        </div></a>
+
+        <a href="./Maträtter/Veggie_burger.html"><div class="recipe-card">
+            <img class="recipe-image" src="./Bilder/Matbilder/veggie-burger.webp" alt="Recipe Image">
+            <div class="recipe-text">Veggie Burger</div>
+        </div></a>
+    </div>
+
+    <div class="popup-container" id="popupContainer">
+        <div class="ad__window">
+          <div class="ad__top">
+            <div class="ad__name">Katten Investments</div>
+            <img src="./Bilder/x.svg" alt="" class="ad__xbutton">
+          </div>
+          <div class="ad__bild"><img src="./Bilder/Kitten.webp" alt="Bilden"></div>
+          <div class="ad__content">Vill du bli lika rik som den här katten? Klicka på bilden för att få veta mer</div>
+        </div>
+      </div>
+    <script src="./Script/ad.js"></script>
+
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Om Oss</h2>
+                <p>Vi har levererat kvalitetsservice och recept i över 20 minuter. Vi är engagerade i excellens och kundnöjdhet.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Snabblänkar</h2>
+                <ul>
+                    <li><a href="./index.html">Hem</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#about">Om</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Kontakta Oss</h2>
+                <p>E-post: heltlegit@fitflavors.se</p>
+                <p>Telefon: 070-777 77 77</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/?locale=sv_SE"><img src="./Bilder/Facebook.svg" alt="Facebook"></a>
+                    <a href="https://x.com/home?lang=sv"><img src="./Bilder/Twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="./Bilder/Linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/"><img src="./Bilder/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitFlavors. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+</body>
+</html>
